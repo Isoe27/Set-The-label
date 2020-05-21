@@ -1,0 +1,490 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    padding: 0;
+    width: 100%;
+    hyphens: auto;
+    scroll-behavior: smooth; 
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*----Scroll indikator start ------*/
+
+
+.navpanel {
+    position: fixed;
+    top: 0;
+    right: 30px;
+    height: 100%;
+    width: 8%;
+    font-size: 20px;
+    z-index: 100;
+}
+
+.navelem {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center
+    
+}
+
+.navlink {
+    text-decoration: none;
+    color: black;
+}
+
+
+.hjerte {
+width: 14%;
+}
+
+
+.aktivmenupkt {
+    background-color: green;
+    color: black;
+}
+
+/*----Scroll indikator slut ------*/
+
+
+img {
+    width: 100%;
+}
+
+/*----forside start ------*/
+
+.logo {width: 200px;}
+
+.debut {
+    background-image: url(../images/stlbaggrundv2.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.debuttekst {
+    text-align: center;
+    padding-top: 20%;
+    color: white;
+}
+
+
+.pilned {
+    width: 5%; 
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    margin-top: 220px;
+    z-index: 2;
+}
+
+/*----forside slut ------*/
+
+.logo-blog {
+    background: #D3CCCB;
+    height: 150px;
+   
+}
+
+.logo-blog-img{
+    
+width: 250px;
+    margin-left: 46%;
+}
+
+
+/*----countdown start ------*/
+
+.img-deler {
+   height: 20%;
+    background-image: url(../images/mellembilled.JPG);
+    background-size: contain;
+}
+
+
+.countdownblog {    
+background: #D3CCCB;
+    height: 45%;
+    width: 100%;
+    text-align: center;
+   
+    
+}
+
+.countdown-intro {
+    color: white;
+    font-size: 40px;
+    padding-top: 60px;
+}
+
+
+/*----countdown style start ------*/
+
+#dage {
+  text-align: center;
+  font-size: 60px;
+  margin: 20px;    
+    padding: 40px;
+background-color: white;
+    color: #D3CCCB;    
+}
+
+#timer{
+  text-align: center;
+  font-size: 60px;
+  margin: 20px;
+    padding: 40px;
+background-color: white;
+    color: #D3CCCB;    
+}
+
+
+#min{
+  text-align: center;
+  font-size: 60px;
+  margin: 20px;
+    padding: 40px;
+background-color: white;
+    color: #D3CCCB;    
+}
+
+.countdown-boks {
+    display: flex;
+    justify-content: center;
+}
+
+
+.tid {
+font-size: 30px
+}
+
+/*----countdown style slut ------*/
+
+/*----countdown slut ------*/
+
+
+
+/*----Lær os at kende start ------*/
+
+.lar-os-section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.lar-os{
+    font-size: 40px;
+}
+
+.om-os {
+    margin: 30px;
+}
+
+.vores-vardier {
+    margin: 30px
+}
+
+.vores-toj {
+    margin: 30px
+}
+
+.our-story {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.our-story div {
+    width: 20%;
+}
+
+.pil-sort {
+    width: 5%; 
+    margin-top: 20px;
+    z-index: 2;
+}
+
+/*----countdown Lær os at kende slut ------*/
+
+
+
+
+/*---- om os start ------*/
+
+
+.intro-overskrift {
+text-align: center;
+font-size: 50px;
+padding-bottom: 50px;
+}
+
+.omos-sektion {
+        display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-bottom: 40px;
+    
+}
+
+.omos-tekst {
+    width:55%;
+    line-height: 1.5;
+}
+
+.omos-foto {
+    width: 65%;
+    margin-left: 20%;
+}
+
+
+/*---- om os slut ------*/
+
+/*---- vores værdier start ------*/
+
+
+.vores-vardier-sektion {
+        display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-bottom: 40px;
+    
+}
+
+.vardier-tekst {
+    display: flex;
+}
+
+.vores-vardier-tekst {
+    width:33%;
+    line-height: 1.5;
+}
+
+.vores-vardier-tekst2 {
+    width:33%;
+    line-height: 1.5;
+    padding-top: 48px
+}
+
+.vores-vardier-foto {
+    width: 65%;
+    margin-left: 20%;
+}
+
+/*---- vores værdier slut ------*/
+
+/*---- vores kollektion start ------*/
+
+.over-foto{
+    text-align: center;
+}
+
+
+.vores-kollektion-sektion {
+        display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-bottom: 40px;
+    
+}
+
+.vores-kollektion-tekst {
+    width:55%;
+    line-height: 1.5;
+    padding-top: 45px
+}
+
+.vores-kollektion-foto {
+    width: 65%;
+    margin-left: 20%;
+}
+
+
+
+
+
+
+/*---- image slider start  https://www.w3schools.com/howto/howto_js_slideshow.asp ------*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  width: 30px;
+  margin: 0 2px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot:hover {
+  background-color: #D3CCCB;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*---- image slider slut ------*/
+
+.vores-krop-sektion {
+display: flex;
+justify-content: center;
+    
+}
+
+.vores-krop-tekst{
+    width: 25%;
+    margin-right: 20%;
+}
+
+/*---- vores kollektion slut ------*/
+/*----footer------*/
+
+
+footer {
+    background: #D3CCCB;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.insta-footer {
+    margin-left: 940%;
+    margin-top: 10%;
+    
+}
+
+.unstyled-list {
+    list-style: none;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+
+}
+
+
+
+/*MEDIA QUERY MOBILE */
+
+@media all and (max-width: 599px) {
+
+    
+    
+}
+
+/*MEDIA QUERY TABLET AND ABOVE*/
+
+@media all and (min-width: 600px) {
+    
+  
+}
+
+
+
+/*MEDIA QUERY LAPTOP AND ABOVE*/
+
+@media all and (min-width: 1024px) {
+
+   
+
+    
+  
+
+    
+    
+ 
+    
+    
+    
+    
+  
+
+  
+
+}
