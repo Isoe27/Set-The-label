@@ -3,7 +3,7 @@ html {
     height: 100%;
     margin: 0;
     font-size: 16px;
-    font-family: "Lato", sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-weight: 400;
     line-height: 1.8em;
     padding: 0;
@@ -16,8 +16,13 @@ html {
 * {
     box-sizing: border-box;
 }
+h3 {
+    font-family: 'Barlow', sans-serif;
+}
 
-
+h2 {
+    font-family: 'Barlow', sans-serif;
+}
 /*----Scroll indikator start ------*/
 
 
@@ -53,7 +58,7 @@ width: 14%;
 
 
 .aktivmenupkt {
-    background-color: green;
+    background-color: #D3CCCB;
     color: black;
 }
 
@@ -124,8 +129,9 @@ background: #D3CCCB;
 
 .countdown-intro {
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     padding-top: 60px;
+    margin-top: 0px;
 }
 
 
@@ -215,7 +221,7 @@ font-size: 30px
     z-index: 2;
 }
 
-/*----countdown Lær os at kende slut ------*/
+/*---- Lær os at kende slut ------*/
 
 
 
@@ -248,6 +254,9 @@ padding-bottom: 50px;
     margin-left: 20%;
 }
 
+.foto-tekst {
+    margin-left: 20%
+}
 
 /*---- om os slut ------*/
 
@@ -304,11 +313,12 @@ padding-bottom: 50px;
 .vores-kollektion-tekst {
     width:55%;
     line-height: 1.5;
-    padding-top: 45px
+    padding-top: 45px;
+
 }
 
 .vores-kollektion-foto {
-    width: 65%;
+    width: 50%;
     margin-left: 20%;
 }
 
@@ -419,9 +429,13 @@ justify-content: center;
 
 .vores-krop-tekst{
     width: 25%;
-    margin-right: 20%;
+    margin-right: 10%;    
 }
 
+.vores-krop-foto{
+    width: 23%;
+    margin: 0px 0 3% 0px
+}
 /*---- vores kollektion slut ------*/
 /*----footer------*/
 
@@ -454,7 +468,179 @@ footer {
 
 @media all and (max-width: 599px) {
 
+ 
+.navpanel {
+ display: none;
+    }    
     
+
+.navpanel2 {
+    position: fixed;
+    top: 0;
+    margin-left: 73%;
+    height: 100%;
+    width: 40%;
+    z-index: 100;
+}    
+    
+
+    
+/*----forside start ------*/
+
+
+.debut {
+    background-image: url(../images/stlbaggrundv2.jpg);
+    background-size: contain;
+    height: 80%;
+}
+
+.debuttekst {
+    padding-top: 50%;  
+}
+
+
+.pilned {
+    width: 10%; 
+}
+
+/*----forside slut ------*/
+
+.logo-blog {
+    background: #D3CCCB;
+    height: 130px;
+   
+}
+
+.logo-blog-img{
+    
+width: 200px;
+    margin-left: 33%;
+}    
+  
+    
+ 
+/*----countdown start ------*/
+
+.img-deler {
+   height: 15%;
+    background-image: url(../images/mellembilled.JPG);
+    background-size: cover;
+}
+
+
+.countdownblog {    
+background: #D3CCCB;
+    height: 60%;
+    width: 100%;
+    text-align: center;   
+}
+
+/*----countdown style slut ------*/
+
+/*----countdown slut ------*/
+
+
+/*----Lær os at kende start ------*/
+
+
+
+.our-story div {
+    width: 35%;
+}
+
+.pil-sort {
+    width: 10%; 
+}
+
+/*----countdown Lær os at kende slut ------*/   
+ 
+    .omos-sektion{
+        display: none;
+    }
+    
+    .omos-sektion2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 30px;
+    }    
+    
+.omos-blog  {
+width: 40%;
+    }
+.omos-blog img  {
+width: 70%;
+    }    
+ 
+.vores-vardier-sektion {
+        display: none;
+    }
+    
+
+.vores-vardier-sektion2 {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+    }    
+    
+    .vardier-blog {
+        width: 40%;
+        margin: 10px 20px 0px 0px
+    }    
+   
+/*---- vores kollektion start ------*/
+
+
+.vores-kollektion-sektion {
+        display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-bottom: 40px;
+    
+}
+
+.vores-kollektion-tekst {
+    width:70%;
+    line-height: 1.5;
+    padding-top: 45px;
+    margin-left: 8%;
+
+}
+
+.vores-kollektion-foto {
+    width: 50%;
+    margin-left: 20%;
+}
+
+
+    .vores-krop-sektion {
+        display: none;
+    }
+    
+.vores-krop-sektion2 {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+    
+}
+
+.vores-krop-tekst2{
+    width: 60%;
+    margin-right: 10%;    
+}
+
+.vores-krop-foto2{
+    width: 70%;
+    margin: 0px 0 3% 0px
+}
+/*---- vores kollektion slut ------*/ 
+    
+    
+.insta-footer {
+    margin-left: 100%;
+    margin-top: 10%;
+    
+}    
     
 }
 
@@ -472,13 +658,25 @@ footer {
 @media all and (min-width: 1024px) {
 
    
-
+    .navpanel2 {
+    display: none;
+        
+        
+    }
     
+    .vores-krop-sektion2 {
+        display: none;
+    }   
   
 
     
-    
+    .vores-vardier-sektion2 {
+        display: none;
+    }  
  
+    .omos-sektion2{
+        display: none;
+    }
     
     
     

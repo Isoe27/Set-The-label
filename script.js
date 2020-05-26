@@ -99,60 +99,6 @@ var x = setInterval(function() {
 
 // countdown slut
 
-// scroll indikator start
-
-
-function aktiverNavElement(elementIndeks) {
-    const menupunkt = document.getElementById(menuPkt[elementIndeks]);
-    menupunkt.classList.add("aktivmenupkt");
-}
-
-function deaktiverNavElement(elementIndeks) {
-    const menupunkt = document.getElementById(menuPkt[elementIndeks]);
-    menupunkt.classList.remove("aktivmenupkt");
-}
-
-function erSynlig(elementId) {
-    const elementBoks = document.getElementById(elementId).getBoundingClientRect();
-    const halvtredsPct = elementBoks.height * 0.5;
-    const start = window.innerHeight - halvtredsPct;
-
-    if (elementBoks.top <= start && elementBoks.bottom - halvtredsPct > 0) {
-        return true;
-    } else {
-        return false;
-    }
-
-}
-
-
-
-function aktiverTekstAnimation() {
-    for (let i = 0; i <= tekstIdListe.length - 1; i++) {
-        if (erSynlig(tekstIdListe[i])) {
-            document.getElementById(tekstIdListe[i]).classList.add("roll-in-right");
-        } else {
-            document.getElementById(tekstIdListe[i]).classList.remove("roll-in-right");
-        }
-    }
-}
-
-// Hovedprogramdel
-const menuPkt = ["countdownmenupkt", "larosmenupkt", "omosmenupkt", "vores-vardiermenupkt", "vores-kollektionmenupkt"];
-const tekstIdListe = ["tekst1", "tekst2", "tekst3", "tekst4"];
-const AVIdListe = ["paris", "istanbul", "firenze", "video"];
-const AVIndholdsliste = [];
-
-
-window.addEventListener("scroll", function () {
-    aktiverMultimedier();
-    aktiverTekstAnimation();
-});
-
-
-
-// scroll indikator slut
-
 
 // image slider start https://www.w3schools.com/howto/howto_js_slideshow.asp
 
@@ -187,3 +133,63 @@ function showSlides(n) {
 }
 
 // image slider slut
+
+// scroll indikator start 1
+
+
+function aktiverNavElement(elementIndeks) {
+    const menupunkt = document.getElementById(menuPkt[elementIndeks]);
+    menupunkt.classList.add("aktivmenupkt");
+}
+
+function deaktiverNavElement(elementIndeks) {
+    const menupunkt = document.getElementById(menuPkt[elementIndeks]);
+    menupunkt.classList.remove("aktivmenupkt");
+}
+
+function erSynlig(elementId) {
+    const elementBoks =
+document.getElementById(elementId).getBoundingClientRect();
+    const halvtredsPct = elementBoks.height * 0.5;
+    const start = window.innerHeight - halvtredsPct;
+
+    if (elementBoks.top <= start && elementBoks.bottom - halvtredsPct >
+0) {
+        return true;
+    } else {
+        return false;
+    }
+
+}
+
+function aktiverTekstAnimation() {
+    for (let i = 0; i <= tekstIdListe.length - 1; i++) {
+        if (erSynlig(tekstIdListe[i])) {
+            aktiverNavElement(i);
+            if (i > 0) {
+                deaktiverNavElement(i - 1);
+            }
+            if (i < tekstIdListe.length - 1) {
+                deaktiverNavElement(i + 1);
+            }
+        }
+    }
+    /* else {
+               deaktiverNavElement(i);
+           } */
+}
+
+// Hovedprogramdel
+const menuPkt = ["countdownmenupkt", "larosmenupkt", "omosmenupkt", "vores-vardiermenupkt", "vores-kollektionmenupkt"]; 
+const tekstIdListe = ["countdown", "omos", "vores-vardier", "vores-kollektion"];
+
+
+window.addEventListener("scroll", function () {
+    aktiverTekstAnimation();
+});
+
+
+
+// scroll indikator slut
+
+
